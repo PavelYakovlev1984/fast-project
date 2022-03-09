@@ -201,6 +201,56 @@ a {
   color: var(--dark-color);
 }
 
+.tooltip {
+  margin-left: 10px;
+}
+.tooltip__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background: rgba(20, 16, 36, 0.08);
+}
+.tooltip__btn svg {
+  width: 4px;
+  height: 14px;
+}
+.tooltip__btn :focus + .tooltip__txt {
+  opacity: 1;
+  visibility: visible;
+}
+@media (any-hover: hover) {
+  .tooltip__btn:hover + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.tooltip__txt {
+  border-radius: 5px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0 2px 8px rgba(20, 16, 36, 0.1);
+  box-shadow: 0 2px 8px rgba(20, 16, 36, 0.1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--dark-color);
+  background: var(--light-color);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -332,6 +382,12 @@ a {
   grid-column: 4 span;
 }
 .benefits__subtitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   margin-bottom: 20px;
   font-weight: 600;

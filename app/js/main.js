@@ -3288,7 +3288,7 @@ __webpack_require__.r(__webpack_exports__);
 var el = document.querySelector('.tooltip__btn');
 var tooltip = document.querySelector('.tooltip__txt');
 (0,_popperjs_core__WEBPACK_IMPORTED_MODULE_0__.createPopper)(el, tooltip, {
-  placement: 'right-start'
+  placement: 'top-start'
 });
 
 /***/ }),
