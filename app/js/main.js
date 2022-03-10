@@ -3295,6 +3295,10 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.trainers__cont
   scrollbar: {
     el: '.trainers__scroll',
     draggable: true
+  },
+  navigation: {
+    nextEl: '.trainers__slider-btn--next',
+    prevEl: '.trainers__slider-btn--prev'
   }
 });
 

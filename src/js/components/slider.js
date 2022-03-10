@@ -10,4 +10,8 @@ const swiper = new Swiper('.trainers__content', {
     el: '.trainers__scroll',
     draggable: true,
   },
+  navigation: {
+    nextEl: '.trainers__slider-btn--next',
+    prevEl: '.trainers__slider-btn--prev',
+  },
 });
