@@ -2,6 +2,8 @@
   @include image-set("../img/percents");
 
   padding: 87px 0;
+  background-position: bottom center;
+  background-size: cover;
   background-color: var(--accent-color);
 
   &__container {

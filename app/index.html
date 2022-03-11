@@ -47,7 +47,7 @@
         alt="Логотип RoboSchool"
       />
     </a>
-    <nav class="nav" title="Главное меню">
+    <nav class="nav" title="Главное меню" data-menu>
       <ul class="list-reset nav__list">
         <li class="nav__item">
           <a href="#about" class="nav__link data-scroll">О школе</a>
@@ -61,6 +61,14 @@
       </ul>
     </nav>
     <a class="phone" href="tel:+79602831991">8 960 283 19 91</a>
+    <button
+      class="btn-reset burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
 
@@ -341,29 +349,26 @@
           <input
             type="text"
             name="Имя"
-            class="input-reset form__input"
+            class="input-reset form__input input-name"
             placeholder="Имя"
           />
         </label>
-
         <label class="form__label">
           <input
             type="tel"
-            name="Имя"
-            class="input-reset form__input"
+            name="Телефон"
+            class="input-reset form__input input-tel"
             placeholder="Телефон"
           />
         </label>
-
         <label class="form__label">
           <input
             type="email"
             name="E-mail"
-            class="input-reset form__input"
+            class="input-reset form__input input-email"
             placeholder="E-mail"
           />
         </label>
-
         <button class="btn-reset btn btn--dark form__btn">Отправить</button>
       </form>
     </div>

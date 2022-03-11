@@ -265,6 +265,13 @@ a {
   width: 100%;
 }
 .form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -314,6 +321,15 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.burger {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.08);
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  border-radius: 10px;
 }
 
 .hero {
@@ -408,6 +424,12 @@ a {
   -ms-grid-column-span: 3;
   grid-column: 3 span;
 }
+@media (max-width: 1200px) {
+  .about__item {
+    -ms-grid-column-span: 6;
+    grid-column: 6 span;
+  }
+}
 .about__digit {
   font-weight: 600;
   font-size: 70px;
@@ -435,6 +457,12 @@ a {
 .benefits__item {
   -ms-grid-column-span: 4;
   grid-column: 4 span;
+}
+@media (max-width: 1200px) {
+  .benefits__item {
+    -ms-grid-column-span: 6;
+    grid-column: 6 span;
+  }
 }
 .benefits__subtitle {
   display: -webkit-inline-box;
@@ -583,6 +611,13 @@ a {
 .tariffs__item--current .tariffs__descr {
   color: var(--light-color);
 }
+@media (max-width: 1200px) {
+  .tariffs__item--current {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .tariffs__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,6 +657,11 @@ a {
   text-align: center;
   color: var(--dark-color);
 }
+@media (max-width: 1200px) {
+  .tariffs__price {
+    font-size: 45px;
+  }
+}
 .tariffs__descr {
   margin: 0;
   margin-bottom: auto;
@@ -642,6 +682,8 @@ a {
   background-image: -webkit-image-set("../img/percents.avif" type("image/avif"), "../img/percents.webp" type("image/webp"), "../img/percents.jpg" type("image/jpg"));
   background-image: image-set("../img/percents.avif" type("image/avif"), "../img/percents.webp" type("image/webp"), "../img/percents.jpg" type("image/jpg"));
   padding: 87px 0;
+  background-position: bottom center;
+  background-size: cover;
   background-color: var(--accent-color);
 }
 .order__container {
