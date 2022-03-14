@@ -13,15 +13,26 @@
     <nav class="nav" title="Главное меню" data-menu>
       <ul class="list-reset nav__list">
         <li class="nav__item">
-          <a href="#about" class="nav__link data-scroll">О школе</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll
+            >О школе</a
+          >
         </li>
         <li class="nav__item">
-          <a href="#trainers" class="nav__link" data-scroll>Тренеры</a>
+          <a href="#trainers" class="nav__link" data-menu-item data-scroll
+            >Тренеры</a
+          >
         </li>
         <li class="nav__item">
-          <a href="#tariffs" class="nav__link" data-scroll>Стоимость</a>
+          <a href="#tariffs" class="nav__link" data-menu-item data-scroll
+            >Стоимость</a
+          >
         </li>
       </ul>
+      <button
+        class="btn-reset burger-close"
+        aria-label="Закрыть меню"
+        data-menu-close
+      ></button>
     </nav>
     <a class="phone header__phone" href="tel:+79602831991">8 960 283 19 91</a>
     <button

@@ -34,6 +34,12 @@
     color: var(--accent-color);
   }
 
+  &__btns {
+    @include mobile {
+      display: none;
+    }
+  }
+
   &__nav {
     @include flex-all-sb;
   }
@@ -47,6 +53,7 @@
 
   &__slider-btns {
     @include flex-v-center;
+
   }
 
   &__slider-btn {
@@ -74,6 +81,11 @@
 
   .swiper-slide {
     width: 360px;
+
+    @include mobile {
+      width: 220px;
+      height: 306px;
+    }
   }
 }
 

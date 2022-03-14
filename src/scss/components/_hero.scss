@@ -6,10 +6,18 @@
 
   &__container {
     @include flex-v-center;
+
+    @include high-tablet {
+      max-width: none;
+    }
   }
 
   &__image {
     transform: translateX(167px);
+
+    @include high-tablet {
+      display: none;
+    }
   }
 
   &__content {
@@ -33,5 +41,10 @@
       font-size: 20px;
       text-transform: initial;
     }
+  }
+
+  @include high-tablet {
+    padding-bottom: 100px;
+    min-height: auto;
   }
 }
